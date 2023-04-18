@@ -59,10 +59,34 @@ else:
 4. Write a program to check the strength of a password.(please provide different rules for the password)
 
 Ans:
+#Password should have atleast one lower,upper,special character and length must be atleast 8 characters and spaces are not allowed 
+password = input("Enter the password : ")
+digit = 0
+lower = 0
+upper = 0
+sc = 0
+sp_case = ['!','@','#','$','%','^','&','*','(',')','_','-','?','/','.',',','|','`','~']
+if len(password) >= 8:
+    for i in password:
+        if i.isdigit() == True:
+            digit += 1
+        if i.islower() == True:
+            lower += 1
+        if i.isupper() == True:
+            upper += 1
+        if i in sp_case:
+            sc += 1
+for i in password:
+    if i == " ":
+        print("The password contain spaces ,Please recheck the password!")
+if digit >= 1 and lower >= 1 and upper >= 1 and sc >= 1:
+    print("The password you entered is Strong")
+else:
+    print("The password is Not Strong")
 
 
-
-
-
-
+-------------------------------------------------------------------------------------------
 5.Write a program to create a calculator that perform basic arithematic operations.
+
+Ans:
+
