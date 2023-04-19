@@ -52,3 +52,19 @@ print("Area of square is : ",side*side)
 print("Area of rectangle is : ",length*bredth)
 
 -------------------------------------------------------------
+
+num = input("Enter 3 numbers : ").split(" ")
+low = num[0]
+high = num[2]
+for i in range(len(num)-1):
+    if num[i] > num[i+1]:
+        low = num[i+1]
+    if num[i] > num[i+1]:
+        high = num[i]
+sum = int(num[0]) + int(num[1]) + int(num[2])
+temp = int(low) + int(high)
+print(low)
+print(sum - temp)
+print(high)
+
+--------------------------------------------------------------
