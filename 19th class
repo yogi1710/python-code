@@ -36,3 +36,19 @@ if sum == temp:
    print("Armstrong number")
 else:
    print("Not an Armstrong")
+
+------------------------------------------------------------
+
+print("Enter the triangle values : ")
+base = int(input("Enter base : "))
+height = int(input("Enter height : "))
+print("Enter the square values : ")
+side = int(input("Enter side : "))
+print("Enter the rectangle values : ")
+length = int(input("Enter length : "))
+bredth = int(input("Enter bredth : "))
+print("Area of triangel is : ",(1/2)*base*height)
+print("Area of square is : ",side*side)
+print("Area of rectangle is : ",length*bredth)
+
+-------------------------------------------------------------
